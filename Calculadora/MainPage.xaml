@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="15"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Resultado" Text="0" FontSize="52" BackgroundColor="White" HorizontalOptions="End" VerticalOptions="Center" LineBreakMode="NoWrap" Grid.ColumnSpan="4" Grid.Row="0"></Label>
+        <BoxView Color="Black" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="4"></BoxView>
+        <BoxView Color="Gray" Grid.Column="3" Grid.RowSpan="4" Grid.Row="1" ></BoxView>
+        <Button Text="7" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="1" Grid.Column="0"></Button>
+        <Button Text="8" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="1" Grid.Column="1"></Button>
+        <Button Text="9" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="1" Grid.Column="2"></Button>
+        <Button Text="4" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="2" Grid.Column="0"></Button>
+        <Button Text="5" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="2" Grid.Column="1"></Button>
+        <Button Text="6" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="2" Grid.Column="2"></Button>
+        <Button Text="1" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="3" Grid.Column="0"></Button>
+        <Button Text="2" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="3" Grid.Column="1"></Button>
+        <Button Text="3" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="3" Grid.Column="2"></Button>
+        <Button Text="." FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="4" Grid.Column="0"></Button>
+        <Button Text="0" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="NumeroClicao" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="4" Grid.Column="1"></Button>
+        <Button Text="=" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="Calcular" VerticalOptions="Center" Background="Black" TextColor="White" Grid.Row="4" Grid.Column="2"></Button>
+        <Grid Grid.Row="1" Grid.Column="3" Grid.RowSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Text="C" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="Clear" VerticalOptions="Center" Background="#626262" TextColor="White" Grid.Row="0" Grid.Column="0"></Button>
+            <Button Text="/" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="OperadorClicao" VerticalOptions="Center" Background="#626262" TextColor="White" Grid.Row="1" Grid.Column="0"></Button>
+            <Button Text="x" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="OperadorClicao" VerticalOptions="Center" Background="#626262" TextColor="White" Grid.Row="2" Grid.Column="0"></Button>
+            <Button Text="-" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="OperadorClicao" VerticalOptions="Center" Background="#626262" TextColor="White" Grid.Row="3" Grid.Column="0"></Button>
+            <Button Text="+" FontSize="36" WidthRequest="100" HeightRequest="100" CornerRadius="50" Clicked="OperadorClicao" VerticalOptions="Center" Background="#626262" TextColor="White" Grid.Row="4" Grid.Column="0"></Button>
+        </Grid>
+        
+    </Grid>
+    
+
+</ContentPage>
